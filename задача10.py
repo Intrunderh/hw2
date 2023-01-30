@@ -8,7 +8,8 @@
 # Ответ: 2
 
 import random
-from collections import Counter
+                                               # или так
+                                               # from collections import Counter
 
 n = int(input('Введите количество монеток: '))
 temp = []
@@ -17,8 +18,8 @@ for i in range(n):
     temp.append(orel_reshka)
 print(temp)
 
-count = 0                        # count = Counter(temp)
-for i in temp:                   # print(perevorot)
-    if i == 0:                   # perevorot = count[0]
-        count += 1               # .get и нужный ключ
+count = 0                                      # count = Counter(temp)
+for i in temp:                                 # print(perevorot)
+    if i == 0:                                 # perevorot = count[0]
+        count += 1                             # .get и нужный ключ
 print(count)
